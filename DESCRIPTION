@@ -1,11 +1,5 @@
-First line: A short description of the project, used as a subtitle ot tagline
-
-Remaining lines: a verbose changelog of what makes this "git version" different from the last.
-Use this space (in Markdown format) to describe the context and details of the changes.
-This section should be 5 to 20 lines of interesting detail; each version tab in the project will 
-display this text to help the reader understand why this version is differnet...
-
-The published project on the SPCoast.github.io website will
-include the relevant git commit messages as a terse, high level
-changelog, so don't replicate those messages here.
-
+This board provides connectors to extend the MRCS power and phone bus (used by the EBF31A Battery 
+Feed and ATSN Dispatcher/Operator Boards) to as many as 12 stations. Thsi version has a single bucking 
+converter which provides 12V for buzzers, lamps etc.  Removed aux power for Morse Code Buzzer Controller
+(MCBC) as a revised (V1.0) MCBC will have an onboard (pre) regulator to take 24V down to 9V which
+***should*** be adequate for ProMini clones.
