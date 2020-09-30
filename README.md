@@ -1,33 +1,20 @@
-# REPO NAME: EagleTemplate-new
-## License: CERN Open Hardware Licence v1.2
+# REPO NAME: MRCS0Telephone-Connector-V2.0
 ## License: Creative Commons Attribution-NonCommercial-ShareAlike
 
-Delete one of the license lines above, and replace this line and following with the contents of the doc.md file
+This board provides connectors to extend the MRCS power and phone bus (used by the EBF31A Battery Feed and ATSN Dispatcher/Operator Boards) to as many as 12 stations. Pads are provided for a bucking converter to develop 12VDC for buzzers, LEDs and Relay Latches. I’ve been developing a series of circuit boards to perform the various functions needed to build a layout phone system, but I never made a central board to distribute the phone line and auxiliary power. In the past I assumed the user would use either telephone style “66 blocks” or barrier strips to distribute these signals, but that has become a road block for some users, so this board, with its on board screw terminals puts the basic connections in one place. Features:
 
-### How to use this template:
+• Takes power from the 6-conductor modular telephone and +24V power bus (note to phone people: this is positive 24 to keep things simple for non-phone model railroaders) • Two 6 conductor Jacks are provided for daisy chaining the bus. Connectors are oriented with the locking tab up for easy connection and disconnection.
 
-  1. Create a repo using this template, 
-  2. Use eagle to create your project
-  3. Edit the other text files to describe your project
-  4. git add .
-  5. git commit -m "add to git"
-  6. git tag -a 1.0 -m 1.0
-  7. git push origin 1.0
-  
+• Connector pads provide up to 12 connections on 0.100 centers for Tip, Ring, +12 and Ground. If you are assembling your own board and need less connections, you can use screw terminals (or your favorite 0.100 connector) with fewer positions
 
-This is a template for new eagle designs.
-It includes a blank schematic with a title block ready for editing and a
-default PCB that uses the SPCoast.lbr's BOARD component, Fiducials and an OSHW logo.
+• Optional auxiliary 6 position screw terminal brings all lines on the bus out for easy access
 
-First line: A short description of the project, used as a subtitle or tagline
+• Polarity protection diode protects against use of non-reversing (DCC Bus 6 conductor cable)
 
-Remaining lines: a verbose changelog of what makes this "git version" different from the last.
-Use this space (in Markdown format) to describe the context and details of the changes.
-This section should be 5 to 20 lines of interesting detail; each version tab in the project will 
-display this text to help the reader understand why this version is differnet...
+- 2.1 mm barrel jack for 24vdc input
 
-The published project on the SPCoast.github.io website will
-include the relevant git commit messages as a terse, high level
-changelog, so don't replicate those messages here.
+• Pads for an LM2596 bucking converter which provides 12V for buzzers, LEDs and Relay Latches etc., or you can substitute a boost converter for any voltage up to 35VDC
 
+All components are through-hole technology for ease of assembly and repair.
 
+You are free to download these files and make your own boards or cou can purchase bare boards or assembled and tested product from Model Railroad Control Systems.
